@@ -1,3 +1,4 @@
 # tour-plan
 
-Marsel Sattarov
+Marsel Sattarov project
+Мой новый проект
