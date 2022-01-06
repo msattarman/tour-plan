@@ -1,3 +1,3 @@
 # tour-plan
 
-Marsel Sattarov project
+Marsel Sattarov
