@@ -376,12 +376,12 @@ template {
   padding-top: 40px;
   padding-bottom: 40px;
 }
+.navbar-top__menu-button {
+  display: none;
+}
 .navbar__search {
   margin-right: auto;
   margin-left: 108px;
-}
-.navbar__menu-button {
-  display: none;
 }
 .navbar-bottom {
   background-color: #0A223D;
@@ -487,7 +487,6 @@ template {
   }
   .navbar__search {
     margin-left: auto;
-    max-width: 340px;
   }
   .navbar-menu {
     padding-top: 22px;
@@ -496,6 +495,10 @@ template {
   .navbar-menu__link {
     font-size: 12px;
     line-height: 15px;
+  }
+
+  .search__input {
+    width: 340px;
   }
 }
 @media (max-width: 768px) {
@@ -508,12 +511,13 @@ template {
     display: none;
   }
 
-  .menu-buttom {
+  .menu-button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     width: 16px;
     height: 11px;
+    padding: 0;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -528,7 +532,7 @@ template {
     background-color: #ffffff;
     cursor: pointer;
   }
-  .menu-buttom__line {
+  .menu-button__line {
     width: 16px;
     height: 1px;
     background-color: #333333;
