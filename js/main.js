@@ -1,8 +1,9 @@
 const swiper = new Swiper('.swiper', {
-  // Optional parameters
   loop: true,
-
-  // Navigation arrows
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
   navigation: {
     nextEl: '.slider-button--next',
     prevEl: '.slider-button--prev',
