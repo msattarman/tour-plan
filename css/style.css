@@ -26,10 +26,8 @@ img {
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 html {
-  line-height: 1.15;
-  /* 1 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
 }
 
 /* Sections
@@ -65,12 +63,9 @@ h1 {
  */
 hr {
   -webkit-box-sizing: content-box;
-          box-sizing: content-box;
-  /* 1 */
-  height: 0;
-  /* 1 */
-  overflow: visible;
-  /* 2 */
+          box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
 }
 
 /**
@@ -78,10 +73,8 @@ hr {
  * 2. Correct the odd `em` font sizing in all browsers.
  */
 pre {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
 }
 
 /* Text-level semantics
@@ -98,13 +91,10 @@ a {
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
  */
 abbr[title] {
-  border-bottom: none;
-  /* 1 */
-  text-decoration: underline;
-  /* 2 */
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
   -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
-  /* 2 */
+          text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -122,10 +112,8 @@ strong {
 code,
 kbd,
 samp {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
 }
 
 /**
@@ -175,14 +163,10 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: inherit;
-  /* 1 */
-  font-size: 100%;
-  /* 1 */
-  line-height: 1.15;
-  /* 1 */
-  margin: 0;
-  /* 2 */
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
 }
 
 /**
@@ -190,8 +174,7 @@ textarea {
  * 1. Show the overflow in Edge.
  */
 button,
-input {
-  /* 1 */
+input { /* 1 */
   overflow: visible;
 }
 
@@ -200,8 +183,7 @@ input {
  * 1. Remove the inheritance of text transform in Firefox.
  */
 button,
-select {
-  /* 1 */
+select { /* 1 */
   text-transform: none;
 }
 
@@ -251,18 +233,12 @@ fieldset {
  */
 legend {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  /* 1 */
-  color: inherit;
-  /* 2 */
-  display: table;
-  /* 1 */
-  max-width: 100%;
-  /* 1 */
-  padding: 0;
-  /* 3 */
-  white-space: normal;
-  /* 1 */
+          box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
 }
 
 /**
@@ -286,10 +262,8 @@ textarea {
 [type=checkbox],
 [type=radio] {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  /* 1 */
-  padding: 0;
-  /* 2 */
+          box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
 }
 
 /**
@@ -305,10 +279,8 @@ textarea {
  * 2. Correct the outline style in Safari.
  */
 [type=search] {
-  -webkit-appearance: textfield;
-  /* 1 */
-  outline-offset: -2px;
-  /* 2 */
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
 }
 
 /**
@@ -323,10 +295,8 @@ textarea {
  * 2. Change font properties to `inherit` in Safari.
  */
 ::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  /* 1 */
-  font: inherit;
-  /* 2 */
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
 }
 
 /* Interactive
@@ -1048,11 +1018,162 @@ template {
   cursor: pointer;
 }
 
+.footer {
+  background-color: #0A223D;
+  color: #ffffff;
+  padding-top: 108px;
+  padding-bottom: 46px;
+}
+.footer-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(-webkit-min-content, 1fr));
+  grid-template-columns: repeat(4, minmax(min-content, 1fr));
+  grid-gap: 20px;
+  grid-auto-rows: minmax(40px, -webkit-min-content);
+  grid-auto-rows: minmax(40px, min-content);
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+.footer__logo {
+  width: 166px;
+  grid-row: 1/3;
+  align-self: center;
+}
+.footer__categories {
+  grid-row: 1/4;
+}
+.footer__social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 83px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.footer__social-network {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-row: 2/4;
+  grid-column: span 2;
+}
+.footer__contact-details {
+  grid-column: span 2;
+}
+.footer__contact-form {
+  grid-column: span 2;
+}
+.footer__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.footer__ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.footer__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  text-transform: uppercase;
+  margin: 0 0 16px 0;
+}
+.footer__title--inline {
+  margin: 0 43px 0 0;
+}
+.footer__title--mb-3 {
+  margin-bottom: 30px;
+}
+.footer__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 160%;
+  color: #BDBDBD;
+}
+.footer__item--mb-2 {
+  margin-bottom: 20px;
+}
+.footer__icon-wrapper {
+  min-width: 40px;
+}
+.footer__text {
+  color: #BDBDBD;
+  margin-bottom: 22px;
+}
+.footer__link {
+  text-decoration: none;
+  color: inherit;
+}
+.footer__input {
+  background-color: #fff;
+  border-radius: 4px;
+  border: none;
+  padding: 0 23px;
+  height: 50px;
+  margin-bottom: 15px;
+  -ms-flex-preferred-size: 48%;
+      flex-basis: 48%;
+}
+.footer__message {
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 18px 23px;
+  border: none;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  margin-bottom: 23px;
+}
+.footer__button {
+  min-width: 160px;
+  min-height: 50px;
+  padding: 18px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  color: #ffffff;
+  background-color: #EC1F46;
+  border: none;
+  border-radius: 4px;
+}
+.footer__info {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
   }
-
   .hotel-slider {
     width: 590px;
   }
@@ -1062,7 +1183,6 @@ template {
     -o-object-fit: cover;
        object-fit: cover;
   }
-
   .card {
     width: 230px;
     height: 230px;
@@ -1073,11 +1193,9 @@ template {
 .newsletter-wrapper {
     max-width: 700px;
   }
-
   .logo {
     width: 132px;
   }
-
   .navbar-top {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -1093,11 +1211,9 @@ template {
     font-size: 12px;
     line-height: 15px;
   }
-
   .search__input {
     width: 340px;
   }
-
   .hotel-grid {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1116,22 +1232,18 @@ template {
   .hotel-slider {
     width: 100%;
   }
-
   .booking {
     width: 340px;
   }
-
   .map {
     width: 340px;
   }
-
   .reviews__title {
     font-size: 30px;
   }
   .reviews-slider__item {
     max-width: 580px;
   }
-
   .activities-wrapper {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1139,7 +1251,6 @@ template {
   .activities__card {
     margin-bottom: 20px;
   }
-
   .card {
     width: 340px;
     height: 255px;
@@ -1150,11 +1261,9 @@ template {
     max-width: 576px;
     width: 92%;
   }
-
   .navbar__search, .navbar-menu, .navbar__user {
     display: none;
   }
-
   .menu-button {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1181,12 +1290,10 @@ template {
     height: 1px;
     background-color: #333333;
   }
-
   .stars {
     -ms-flex-preferred-size: auto;
         flex-basis: auto;
   }
-
   .hotel-name {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
@@ -1215,7 +1322,6 @@ template {
             order: -1;
     margin-left: 0;
   }
-
   .hotel-right {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1226,15 +1332,12 @@ template {
   .hotel-slider {
     height: 350px;
   }
-
   .booking {
     width: 100%;
   }
-
   .map {
     width: 100%;
   }
-
   .newsletter-wrapper {
     max-width: 576px;
     width: 92%;
@@ -1246,7 +1349,6 @@ template {
         -ms-flex-align: start;
             align-items: flex-start;
   }
-
   .reviews__title {
     font-size: 20px;
   }
@@ -1273,12 +1375,10 @@ template {
         -ms-transform: translate(50%, 0);
             transform: translate(50%, 0);
   }
-
   .activities {
     margin-top: 40px;
     margin-bottom: 60px;
   }
-
   .card {
     width: 49%;
     height: 230px;
@@ -1288,25 +1388,21 @@ template {
   .logo {
     width: 99px;
   }
-
   .hotel__slider {
     margin-bottom: 20px;
   }
   .hotel-slider {
     height: 250px;
   }
-
   .newsletter {
     padding: 76px 0 83px 0;
   }
   .newsletter__title {
     margin-bottom: 37px;
   }
-
   .subscribe {
     width: 100%;
   }
-
   .card {
     width: 100%;
   }
