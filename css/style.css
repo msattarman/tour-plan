@@ -1540,6 +1540,9 @@ template {
   }
 }
 @media (max-width: 320px) {
+  .search__input {
+    max-width: 250px;
+  }
   .newsletter__subscribe {
     max-width: 280px;
   }
