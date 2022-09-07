@@ -48,6 +48,11 @@ img {
   border-radius: 4px;
 }
 
+.invalid {
+  color: #EC1F46;
+  border-bottom: 1px solid #EC1F46;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -1237,11 +1242,12 @@ template {
 }
 .modal__input {
   width: 100%;
-  margin-bottom: 15px;
+  margin-top: 15px;
 }
 .modal__message {
   width: 100%;
   min-height: 123px;
+  margin-top: 15px;
 }
 .modal__info {
   font-style: normal;
